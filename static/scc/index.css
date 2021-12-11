@@ -1,0 +1,26 @@
+body {
+    color: rgb(65, 54, 41);
+}
+
+.content {
+    text-align: center;
+}
+
+
+.menu {
+    background-color: salmon;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.menu a {
+    padding: 0px 8px;
+    color: beige;
+    text-decoration: unset;
+}
+
+.menu a:hover {
+    color: salmon;
+    text-decoration: underline;
+}

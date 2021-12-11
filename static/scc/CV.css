@@ -1,0 +1,113 @@
+@keyframes RotatingCarmel {
+    0%{
+        transform: rotate(0deg)
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform:rotate(360deg) ;/*אם הייתי רוצה מצבים באמצע הייתה בפרום עושה 0 אחוז ובטו עושה 100 אחוז*/
+    }
+}
+
+img{
+    width: 50%;
+    animation-name: RotatingCarmel;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+body{
+    background-color:beige;
+}
+*{
+    font-family: sans-serif;
+}
+#GridContainer{
+    display: grid; 
+    grid-template-areas: 
+    'name photo'
+    'education education'
+    'skills skills';
+}
+#Name{ 
+    grid-area: name;
+    height: 120px;
+    width: 600px;
+    padding: 20px;
+    margin: 20px;
+    background-color: whitesmoke;
+}
+h4{
+    color: maroon;
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+#Photo{
+    grid-area: photo;
+    height: 20px;
+    width: 520px;
+    padding:1px;
+    margin: 16px;
+    background-color:transparent;
+    border: 2px solid transparent;
+}
+#Education{
+    grid-area: education;
+    height:100px;
+    width: 600px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+#Skills{
+    grid-area: skills;
+    height:100px;
+    width: 600px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+
+div{
+    border: 2px solid grey;
+}
+
+
+
+div div{ /*a combination selector, that selects the divs that are the childs of a div*/
+    height: 100px;
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    body{
+        background-color: turquoise;
+    }
+
+}
+
+
+@keyframes RotatingCarmel {
+    0%{
+        transform: rotate(0deg)
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform:rotate(360deg) ;/*אם הייתי רוצה מצבים באמצע הייתה בפרום עושה 0 אחוז ובטו עושה 100 אחוז*/
+    }
+}
+
+img{
+    width: 50%;
+    animation-name: RotatingCarmel;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
