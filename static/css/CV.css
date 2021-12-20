@@ -24,13 +24,13 @@ body{
     font-family: sans-serif;
 }
 #GridContainer{
-    display: grid; 
-    grid-template-areas: 
+    display: grid;
+    grid-template-areas:
     'name photo'
     'education education'
     'skills skills';
 }
-#Name{ 
+#Name{
     grid-area: name;
     height: 120px;
     width: 600px;

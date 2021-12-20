@@ -11,15 +11,18 @@
     <script src="static/js/CV.js"></script>
     <title>CV-Homework</title>
 </head>
-<body onload="carmelFunction()">
+<body
+
+{% include('menu.html') %}
+onload="carmelFunction()">
     <div class="menu">
         <a href="/">Home</a> <a href="/cv">CV</a>
     </div>
     <div id="">
-       
+
         Hello Hello!!!
     </div>
-    <div id="GridContainer"> 
+    <div id="GridContainer">
         <br><h9><a href="https://www.linkedin.com/in/carmel-ben-shoshan-5405ba1bb/"><img src="static/images/linkedin.png" alt="HTML tutorial" style="width:42px;height:42px;"></a></h9>
         <h8><a href="https://www.facebook.com/carmel.shoshan/"><img src="static/images/Facebook.png" alt="HTML tutorial" style="width:42px;height:42px;"></a></h8><BR></BR>
         <h10><span>&#128231</span>: carmelbe@post.bgu.ac.il</h10>&nbsp&nbsp&nbsp<h10><span>&#128241</span>: +972524033969</h10>
@@ -28,7 +31,7 @@
     <title>CV-Grid Homework</title>
 </head>
 <body>
-    <div id="GridContainer"> 
+    <div id="GridContainer">
         <div id="Name">Name:<br> Carmel Ben Shoshan</div>
         <div id="Photo"> <img src="static/images/ProfilePhoto.jpeg" alt="Profile Photo" width="80px" height="80px"> </div>
         <div id="Education"> <h4>Education: Information Systems Management Student, Third Year</h4><br><h5>at Ben Gurioun University Of The Negev</h5></div>
@@ -37,9 +40,6 @@
                         Tools: Site development under WIX environment.
              </div>
     </div>
-
-    <p>To contact us click </p>
-    <a href="cv2.html">Here</a>
 
 </body>
 </html>

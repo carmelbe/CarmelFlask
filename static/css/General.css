@@ -1,0 +1,27 @@
+* {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color:salmon;
+}
+
+body {
+    margin: unset;
+    background-color: beige;
+}
+
+.menu {
+    background-color: beige;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.menu a {
+    padding: 0px 8px;
+    color: gray;
+    text-decoration: unset;
+}
+
+.menu a:hover {
+    color: #949494;
+}
