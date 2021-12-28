@@ -13,7 +13,12 @@
 </head>
 <body
 
-{% include('menu.html') %}
+    {% include('menu.html') %}
+
+    {% if session.username %}
+        <h2>Hello {{ session.username }}!</h2>
+    {% endif %}
+
 onload="carmelFunction()">
     <div class="menu">
         <a href="/">Home</a> <a href="/cv">CV</a>
