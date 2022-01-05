@@ -18,7 +18,7 @@ def insert_user_func():
     name = request.form['name']
     email = request.form['email']
     query = "INSERT INTO users(name, email) VALUES ('%s', '%s')" % (name, email)
-    interact_with_DB(query=query, query_type='commit')
+    interact_db(query=query, query_type='commit')
     global change_message
     change_message = "The user "+name+" is inserted"
     return redirect('/user_list')
@@ -29,7 +29,7 @@ def update_user_func():
     name = request.form['name']
     new_email = request.form['new_email']
     query = "update users set email = '%s' where name = '%s'" % (new_email, name)
-    interact_with_DB(query=query, query_type='commit')
+    interact_db(query=query, query_type='commit')
     global change_message
     change_message = "The email of the user "+name+" is updated"
     return redirect('/user_list')
@@ -39,7 +39,7 @@ def update_user_func():
 def delete_user_func():
     name = request.form['name']
     query = "DELETE FROM users WHERE name='%s'" % name
-    interact_with_DB(query, query_type='commit')
+    interact_db(query, query_type='commit')
     global change_message
     change_message = "The user "+name+" was deleted"
     return redirect('/user_list')
@@ -48,5 +48,5 @@ def delete_user_func():
 @assignment10.route('/user_list')
 def user_list_func():
     query = "select * from users"
-    query_result = interact_with_DB(query=query, query_type='fetch')
+    query_result = interact_db(query=query, query_type='fetch')
     return render_template('assignment10.html', user_list=query_result, change_message=change_message)
